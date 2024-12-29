@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-Route::get('register', 'User\UserController@showRegisterForm')->name('register')->middleware('guest');
+// Route::get('register', 'User\UserController@showRegisterForm')->name('register')->middleware('guest');
 Route::post('register', 'User\UserController@store')->middleware('guest');
 
 // Password Reset Routes...
